@@ -17,9 +17,6 @@ router.post('/api/users/signin',
     ],
     validateRequest,
     async (req: Request, res: Response) => {
-
-            
-
         const { email, password } = req.body;
 
         const existingUser = await User.findOne({ email });

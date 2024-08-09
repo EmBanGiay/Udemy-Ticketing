@@ -33,23 +33,9 @@ afterAll(async () => {
 });
 
 global.signin = () => {
-    /*const email = 'test@test.com';
-    const password = 'password';
-
-    const response = await request(app)
-        .post('/api/users/signup')
-        .send({
-            email, password
-        })
-        .expect(201)
-
-    const cookie = response.get('Set-Cookie');
-    return cookie;
-    */
-
     // build a jwt payload {id, email}
     const payload = {
-        id: '1lk24j124l',
+        id: new mongoose.Types.ObjectId().toHexString(),
         email: 'test@test.com'
     }
 

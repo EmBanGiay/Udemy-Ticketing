@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import { StringLiteral } from 'typescript';
 
 interface TicketAttrs {
     title: string;
